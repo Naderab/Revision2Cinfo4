@@ -1,0 +1,28 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Ghailen chaaleli",
+      "equipe": "Esperance",
+      "etat": false
+    },
+    {
+      "id": 2,
+      "name": "Cristiano Ronaldo",
+      "equipe": "Nasr",
+      "etat": true
+    },
+    {
+      "etat": true,
+      "name": "test",
+      "equipe": "test",
+      "id": 3
+    },
+    {
+      "etat": true,
+      "name": "test 2",
+      "equipe": "test 2",
+      "id": 4
+    }
+  ]
+}

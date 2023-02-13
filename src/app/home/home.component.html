@@ -1,0 +1,13 @@
+<table>
+    <tr *ngFor="let player of listPlayers" [ngStyle]="{'background-color':player.etat==true ? 'yellow':'red'}">
+        <td>{{player.id}}</td>
+        <td>{{player.name}}</td>
+        <td>{{player.equipe}}</td>
+        <td>{{player.etat}}</td>
+        <td>{{player.etat}}</td>
+        <td><button (click)="updateEtat(player)">{{getButtonMessage(player)}}</button></td>
+    </tr>
+</table>
+<button (click)="calcul()">Calculer</button>
+Affected :{{playerAffected}}
+Not Affected : {{playerNotAffected}}

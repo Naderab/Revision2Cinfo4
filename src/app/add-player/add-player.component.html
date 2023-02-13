@@ -1,0 +1,14 @@
+<form>
+   Nom : <input type="text" name="nom" [(ngModel)]="player.name" #nom="ngModel" required>
+    <div *ngIf="nom.touched && nom.invalid">
+        Nom is required!
+    </div>
+   Equipe : <input type="text" name="equipe"  [(ngModel)]="player.equipe" #equipe="ngModel" minlength="3" maxlength="7">
+   <div *ngIf="equipe.touched && equipe.invalid">
+    <div *ngIf="equipe.errors?.['minlength']">Equipe must have at least 3 caracters</div>
+    <div *ngIf="equipe.errors?.['maxlength']">Equipe must have at most 7 caracters</div>
+
+   </div>
+   Etat : <input type="checkbox" name="etat" [(ngModel)]="player.etat">
+    <input type="submit" value="Ajouter" (click)="ajouterPlayer()">
+</form>
